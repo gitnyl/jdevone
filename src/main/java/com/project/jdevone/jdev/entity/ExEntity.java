@@ -1,6 +1,8 @@
 package com.project.jdevone.jdev.entity;
 
 import lombok.*;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 
@@ -10,6 +12,9 @@ import javax.persistence.*;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
+@DynamicInsert
+@DynamicUpdate
 public class ExEntity extends BaseEntity {
 
     @Id
