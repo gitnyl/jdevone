@@ -7,6 +7,7 @@ import org.hibernate.annotations.DynamicUpdate;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "ex_entity")
 @Getter
 @Setter
 @ToString
